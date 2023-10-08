@@ -1,0 +1,11 @@
+version: '3'
+services:
+  rails_back:
+    image: rails_back  # バックエンドのDockerイメージ名
+    ports:
+      - "3100:3100"  # バックエンドのポートマッピング
+
+  react_front:
+    image: react_front  # フロントエンドのDockerイメージ名
+    ports:
+      - "3000:3000"  # フロントエンドのポートマッピング

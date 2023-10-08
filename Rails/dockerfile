@@ -1,0 +1,20 @@
+# ベースイメージの指定
+FROM ruby:3.2.2
+
+# コンテナ内の作業ディレクトリを設定
+WORKDIR /app
+
+# 必要なGemファイルとGemをインストール
+COPY Gemfile Gemfile.lock ./
+RUN bundle install
+
+# アプリケーションのソースコードをコピー
+COPY . .
+
+# データベースのセットアップ（必要に応じて）
+# RUN rails db:create
+RUN rails db:migrate
+
+# アプリケーションの起動
+CMD ["rails", "server", "-b", "-1.0.0.0", "-p", "3100"]
+

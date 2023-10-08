@@ -1,0 +1,46 @@
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.input_GitHuburl{
+    padding:10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 30vw;
+    height: 4vh;
+    margin: 3rem 0;
+    font-size: large;
+    font-family: 'ubuntu';
+}
+
+.input_GitHuburl::placeholder{
+    text-align: center;
+    font-size: large;
+    font-family: 'ubuntu';
+}
+
+.title h1{
+    font-family: 'ubuntu';
+    font-size: 12rem;
+    margin: 3rem 0;
+    text-shadow: 0px 2px 4px rgba(0,0,0,.5);
+}
+
+.side{
+    display: flex;
+    align-items: center;
+}
+
+.icon{
+    height: 3vh;
+    width: 3vh;
+}
+
+.button{
+    height: 6vh;
+    width: 4vw;
+}
